@@ -1,4 +1,4 @@
-# OpenLiveIOSPusher
+# OpenLiveiOSPusher
 本项目使用到了开源的srs-librtmp（https://github.com/ossrs/srs-librtmp）
 
 我们的开源项目汇总：https://github.com/devillee/OpenLive
