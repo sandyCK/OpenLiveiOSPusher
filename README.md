@@ -1,5 +1,6 @@
 # CKRtmpPusher
 本项目使用到了开源的srs-librtmp（https://github.com/ossrs/srs-librtmp）
+
 主要功能：
 
          1.在iOS设备上进行视音频采集，预览视频；
