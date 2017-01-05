@@ -1,4 +1,4 @@
-# CKRtmpPusher
+# OpenLiveIOSPusher
 本项目使用到了开源的srs-librtmp（https://github.com/ossrs/srs-librtmp）
 
 主要功能：
