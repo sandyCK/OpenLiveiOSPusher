@@ -20,3 +20,7 @@
                     C++ Language Dialect ---------- GNU++98[-std=gnu++98]
                     
                     C++ Standard Library ---------- libstdc++(GNU C++ standard library)
+
+提供一种关于视频朝向的解决方法：
+
+         系统默认的采集视频的方向为LandscapeLeft（左边横屏，Home键向右），并且只有宽大于高的分辨率选择，假如你想输出竖屏的视频，可以在LiveViewController中，initCamera方法中设置帧率后面加上[[self.videoOutput connectionWithMediaType:AVMediaTypeVideo] setVideoOrientation:AVCaptureVideoOrientationPortrait]，这时采集视频的方向是竖屏，但是分辨率仍然是640*480的横屏分辨率。然后，初始化h264编码器时直接将宽高设置为你想要的竖屏分辨率，比如480*640，编码器自己会对原始图像做resize。设置完这两个地方，你就会发现输出的视频分辨率是480*640，并且采集的方向是Portrait。
